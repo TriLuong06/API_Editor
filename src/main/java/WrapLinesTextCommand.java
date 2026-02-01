@@ -4,7 +4,7 @@
  */
 public class WrapLinesTextCommand extends WrapTextCommand
 {
-  private String selection;
+
 
 
   /**
@@ -40,14 +40,6 @@ public class WrapLinesTextCommand extends WrapTextCommand
       }
     }
     return result.toString();
-  }
-
-  /**
-   * Getter for selection.
-   * @return the selection
-   */
-  public String getSelection() {
-    return selection;
   }
 
 

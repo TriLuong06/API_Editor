@@ -29,6 +29,9 @@ public class CapitalizeSelectionTextCommand extends CapitalizeTextCommand{
    * @return the text with the selected text capitalized.
    */
   public String execute(String text) {
+    if(text == null || text.isEmpty()) {
+      throw new IllegalArgumentException("Text cannot be null or empty");
+    }
     String capitalized = super.execute(selection);
     return text.replace(selection, capitalized);
 

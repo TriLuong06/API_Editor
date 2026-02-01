@@ -8,7 +8,9 @@ public class Script {
 
   /**
    * Constructor to initialize the text commands.
+   *
    * @param textCommands the commands to execute.
+
    */
   public Script(List<TextCommand> textCommands) {
     this.textCommands = textCommands;
@@ -20,6 +22,9 @@ public class Script {
    * @return the text.
    */
   public String execute(String text) {
+    if (text==null || text.isBlank()) {
+      throw new IllegalArgumentException("Text cannot be null or blank");
+    }
     for (TextCommand textCommand : textCommands) {
       text= textCommand.execute(text);
     }

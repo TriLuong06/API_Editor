@@ -13,6 +13,10 @@ public class WrapSelectionTextCommand extends WrapTextCommand {
    */
   public WrapSelectionTextCommand(String opening, String end, String selection) {
     super(opening, end);
+    if (selection == null || selection.isBlank()) {
+      throw new IllegalArgumentException("Selection should not be null or blank");
+    }
+
     this.selection = selection;
   }
 
@@ -22,8 +26,8 @@ public class WrapSelectionTextCommand extends WrapTextCommand {
    */
   @Override
   public String execute(String text) {
-    if (selection==null||selection.isBlank()){
-      throw new IllegalArgumentException("Selection cannot be null or blank");
+    if (text == null || text.isBlank()) {
+      throw new IllegalArgumentException("Text should not be null or blank");
     }
     return text.replace(selection, opening+ selection + end );
   }

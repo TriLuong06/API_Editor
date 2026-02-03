@@ -1,5 +1,5 @@
 /**
- * Interface class.
+ * Interface class for the execute method.
  */
 public interface TextCommand
   {

@@ -1,5 +1,5 @@
 /**
- * This class is responsible to capitalize each word in an sentence.
+ * This class is responsible to capitalize each word in a sentence.
  */
 public class CapitalizeWordsTextCommand extends CapitalizeTextCommand{
 
@@ -11,7 +11,9 @@ public class CapitalizeWordsTextCommand extends CapitalizeTextCommand{
    */
   @Override
   public String execute(String text) {
-
+    if (text==null || text.isBlank()) {
+      throw new IllegalArgumentException("Text cannot be null or blank");
+    }
     String[] words = text.split("\\s");
     StringBuilder result = new StringBuilder();
 

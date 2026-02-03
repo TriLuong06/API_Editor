@@ -1,3 +1,6 @@
+/**
+ * Class that is responsible to wrap text.
+ */
 public class WrapTextCommand implements TextCommand{
 
   protected String opening;

@@ -24,7 +24,7 @@ class ScriptTest {
 
 
   /**
-   * Negative test for running script, null commands.
+   * Negative test for a running script, null commands.
    */
 
   @Test

@@ -4,9 +4,9 @@
 public interface TextCommand
   {
     /**
-     * Method to execute.
+     * Interface method to execute.
      * @param text the text to execute.
-     * @return
+     * @return the result of the executed text.
      */
     public String execute(String text);
   }

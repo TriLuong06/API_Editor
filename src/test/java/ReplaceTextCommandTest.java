@@ -6,7 +6,7 @@ class ReplaceTextCommandTest {
 
 
   /**
-   * Positive test that replaces every target string with replacement string.
+   * Positive test that replaces every target string with a replacement string.
    */
   @Test
   void execute_valid_replacesAllText() {

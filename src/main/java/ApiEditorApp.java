@@ -1,7 +1,7 @@
 import java.util.List;
 
 /**
- * Main starting point of the application that initializes and starts the program.
+ * Main starting point of the application.
  */
 
 public class ApiEditorApp{

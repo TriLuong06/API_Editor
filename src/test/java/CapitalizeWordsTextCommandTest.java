@@ -23,7 +23,7 @@ class CapitalizeWordsTextCommandTest {
 
 
   /**
-   * Negative test that check for throw when trying to execute a null value for text string.
+   * Negative test that check for throw when trying to execute a null value for a text string.
    */
   @Test
   void execute_invalid_null() {

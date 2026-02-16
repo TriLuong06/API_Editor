@@ -1,5 +1,5 @@
 /**
- * This class is responsible for all the actions that includes to replace a text.
+ * This class is responsible for all the actions that include to replace a text.
  */
 public class ReplaceTextCommand implements TextCommand
 

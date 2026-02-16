@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 /**
- * Test class for CapitalizeTextCommand class that test  both postive and negative
+ * Test class for CapitalizeTextCommand class that test both positive and negative
  * scenarios for each method
  * to test expected behavior.
  */
